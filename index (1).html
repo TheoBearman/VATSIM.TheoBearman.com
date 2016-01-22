@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>VATSIM.TheoBearman.com</title>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.css">
+	<link href="css/animate.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paradeiser/0.4.3/min/paradeiser.min.css">
+
+	<!-- Custom CSS -->
+	<link href="css/stylish-portfolio.css" rel="stylesheet">
+	<link rel="shortcut icon" href="https://resume.theobearman.com/img/favicon.ico">
+
+	<!-- Custom Fonts -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+
+	<!-- jQuery -->
+	<script src="js/jquery.js"></script>
+	<script src="js/wow.min.js"></script>
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Roboto Slab', serif;
+		}
+		
+		p,
+		div,
+		span {
+			font-family: 'Roboto Slab', serif;
+		}
+	</style>
+	<style>
+		/* Paste this css to your style sheet file or under head tag */
+		/* This only works with JavaScript, 
+if it's not present, don't show loader */
+		
+		.no-js #loader {
+			display: none;
+		}
+		
+		.js #loader {
+			display: block;
+			position: absolute;
+			left: 100px;
+			top: 0;
+		}
+		
+		.se-pre-con {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(https://vatsim.theobearman.com/img/loader.gif) center no-repeat #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="paradeiser" id="paradeiser">
+		<a href="https://theobearman.com">
+			<div class="paradeiser_icon_canvas">
+				<img src="img/home.png" alt="Navigate to Home">
+			</div>
+			<span>Go Home</span>
+		</a>
+		<a href="http://www.vatsim.net/">
+			<img src="img/vatsim.png" alt="Logo" width="150px">
+		</a>
+		<a href="https://vatsim.theobearman.com/vatsim-data.txt">
+			<div class="paradeiser_icon_canvas">
+				<img src="img/download.png" alt="Download a Copy">
+			</div>
+			<span>Download a Copy</span>
+		</a>
+	</nav>
+	<div class="se-pre-con"></div>
+	<style>
+		h1 {
+			color: #000000;
+			font-size: 10px;
+			font-weight: 400;
+		}
+		
+		h3 {
+			color: #000000;
+			padding-bottom: 10px;
+			font-weight: 400;
+		}
+		
+		h4 {
+			color: #000000;
+			font size: 10px;
+			text-align: center;
+			font-weight: 400;
+		}
+	</style>
+
+	<!-- Header -->
+	<header id="top" class="header">
+		<div class="text-vertical-center">
+
+			<h1><font size="15">VATSIM-Data.txt</font></h1>
+			<h3>Provided by Theo Bearman</h3>
+			<center>
+				<hr class="small">
+			</center>
+			<h4><div style="display: inline; font-style: italic" "color: #000000" class="vatsim"></div><i> Members Currently Connected</i></h4>
+			<br>
+			<a href="https://vatsim.theobearman.com/vatsim-data.txt" data-ix="fade-in-3" class="w-button buttoncta">Download a Copy</a>
+		</div>
+	</header>
+
+	<!-- About -->
+	<section id="about" class="about" style="background-color: #f2f2f2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Controllers Online in the United Kingdom</h2>
+				</div>
+			</div>
+			<table data-toggle="table" data-url="https://vatsim.theobearman.com/eud4.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="5, 10, 25, 50, 100, All" data-height="400"
+			data-sort-name="name" data-sort-order="asc" date-width="100%">
+				<thead>
+					<tr>
+						<th data-field="name" data-halign="center" data-align="center" data-sortable="true">Controller Name</th>
+						<th data-field="callsign" data-halign="center" data-align="center" data-sortable="true">Callsign</th>
+						<th data-field="frequency" data-halign="center" data-align="center" data-sortable="true">Frequency</th>
+						<th data-field="rating" data-halign="center" data-align="center" data-sortable="true">Rating</th>
+						<th data-field="atis_message" data-halign="center" data-align="center" data-sortable="true">Controller ATIS</th>
+
+					</tr>
+				</thead>
+			</table>
+			<br>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>Pilots Flying In & Out of the United Kingdom</h2>
+					</div>
+				</div>
+		
+				<table data-toggle="table" data-url="https://vatsim.theobearman.com/eud2.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="5, 10, 25, 50, 100, All" data-height="400"
+				data-sort-name="callsign" data-sort-order="asc" date-width="100%">
+					<thead>
+						<tr>
+							<th data-field="callsign" data-halign="center" data-align="center" data-sortable="true">Callsign</th>
+							<th data-field="name" data-halign="center" data-align="center" data-sortable="true">Name</th>
+							<th data-field="aircraft" data-halign="center" data-align="center" data-sortable="true">Aircraft</th>
+							<th data-field="origin" data-halign="center" data-align="center" data-sortable="true">Departure Airport</th>
+							<th data-field="destination" data-halign="center" data-align="center" data-sortable="true">Arrival Airport</th>
+							<th data-field="flight_type" data-halign="center" data-align="center" data-sortable="true">Type</th>
+							<th data-field="altitude" data-halign="center" data-align="center" data-sortable="true">Altitude</th>
+							<th data-field="groundspeed" data-halign="center" data-align="center" data-sortable="true">Groundspeed</th>
+							<th data-field="transponder" data-halign="center" data-align="center" data-sortable="true">Squawk</th>
+						</tr>
+					</thead>
+				</table>
+				<br>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<h2>NOTAMs for the London FIR and Major Airports Within the FIR</h2>
+						</div>
+					</div>
+					<table data-toggle="table" data-url="https://vatsim.theobearman.com/eud5.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="10, 25, 50, 100, All" data-height="400"
+					data-sort-name="starts" data-sort-order="asc" date-width="100%">
+						<thead>
+							<tr>
+								<th data-field="icao" data-halign="center" data-align="center" data-sortable="true">Airport ICAO</th>
+								<th data-field="message" data-halign="center" data-align="center" data-sortable="true">NOTAM</th>
+							</tr>
+						</thead>
+					</table>
+					<br>
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<h2>Upcoming European Events on VATSIM</h2>
+							</div>
+						</div>
+						<table data-toggle="table" data-url="https://vatsim.theobearman.com/eud3.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="10, 25, 50, 100, All" data-height="400"
+						data-sort-name="starts" data-sort-order="asc" date-width="100%">
+							<thead>
+								<tr>
+									<th data-field="title" data-halign="center" data-align="center" data-sortable="true">Event Name</th>
+									<th data-field="airports" data-halign="center" data-align="center" data-sortable="true">Airports Taking Part</th>
+									<th data-field="starts" data-halign="center" data-align="center" data-sortable="true">Starts</th>
+									<th data-field="ends" data-halign="center" data-align="center" data-sortable="true">Ends</th>
+								</tr>
+							</thead>
+						</table>
+
+						<!-- /.container -->
+	</section>
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 text-center">
+					<h4><font color="#000000" font face="Source Sans Pro"><a href=https://theobearman.com>Go Home</a></font>
+					</h4>
+					<center>
+						<hr class="small">
+					</center>
+					<p><font color="#000000" font face="Source Sans Pro">Data Courtesy of the <a href=http://api.vateud.net/>VATEUD API</a></font>
+					</p>
+					<p class="text-muted"><font color="#000000" font face="Source Sans Pro">Copyright &copy; <a href=https://theobearman.com>Theo Bearman</a> 2016</p></font>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="js/bootstrap-table2.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script>
+		// Closes the sidebar menu
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+
+		// Opens the sidebar menu
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+
+		// Scrolls to the selected menu item on the page
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		function get_vatsim() {
+			$.ajax({
+				type: 'POST',
+				url: 'https://vatsim.theobearman.com/online.php',
+				data: {
+					request: 'true'
+				},
+				success: function(reply) {
+					$('.vatsim').html("" + reply + "");
+				}
+			});
+		}
+		$(document).ready(function() {
+			get_vatsim();
+		});
+	</script>
+	<script>
+		function displaypage() {
+			$(".se-pre-con").fadeOut("slow");
+		}
+		$(window).load(function() {
+			setTimeout(displaypage, 1800);
+		});
+	</script>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+	<script>
+		// enabling headroom
+		var myElement = document.querySelector(".paradeiser");
+		var headroom = new Headroom(myElement, {
+			tolerance: 5
+		});
+		headroom.init();
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".vatsim").load('https://vatsim.theobearman.com/online.php');
+			setInterval(function() {
+				$(".vatsim").load('https://vatsim.theobearman.com/online.php')
+			}, 60000);
+		});
+	</script>
+</body>
+
+</html>

@@ -134,6 +134,11 @@ if it's not present, don't show loader */
 			<h4><div style="display: inline; font-style: italic" "color: #000000" class="vatsim"></div><i> Members Currently Connected</i></h4>
 			<br>
 			<a href="https://vatsim.theobearman.com/vendor/skymeyer/vatsimphp/app/cache/vatsim-data.txt" data-ix="fade-in-3" class="w-button buttoncta">Download a Copy</a>
+			<br>
+			<br>
+			<!-- Place this tag where you want the button to render. -->
+			<a class="github-button" href="https://github.com/TheoBearman/VATSIM.TheoBearman.com" data-style="mega" data-count-href="/TheoBearman/VATSIM.TheoBearman.com/watchers" data-count-api="/repos/TheoBearman/VATSIM.TheoBearman.com#subscribers_count" data-count-aria-label="# watchers on GitHub"
+			aria-label="Watch TheoBearman/VATSIM.TheoBearman.com on GitHub">Watch</a>
 		</div>
 	</header>
 
@@ -145,8 +150,8 @@ if it's not present, don't show loader */
 					<h2>Controllers Online in the United Kingdom</h2>
 				</div>
 			</div>
-			<table data-toggle="table" data-url="eud4.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="5, 10, 25, 50, 100, All" data-height="400"
-			data-sort-name="name" data-sort-order="asc" date-width="100%">
+			<table data-toggle="table" data-url="eud4.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="5, 10, 25, 50, 100, All" data-height="400" data-sort-name="name" data-sort-order="asc"
+			date-width="100%">
 				<thead>
 					<tr>
 						<th data-field="name" data-halign="center" data-align="center" data-sortable="true">Controller Name</th>
@@ -165,9 +170,9 @@ if it's not present, don't show loader */
 						<h2>Pilots Flying In & Out of the United Kingdom</h2>
 					</div>
 				</div>
-		
-				<table data-toggle="table" data-url="eud2.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="5, 10, 25, 50, 100, All" data-height="400"
-				data-sort-name="callsign" data-sort-order="asc" date-width="100%">
+
+				<table data-toggle="table" data-url="eud2.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="5, 10, 25, 50, 100, All" data-height="400" data-sort-name="callsign" data-sort-order="asc"
+				date-width="100%">
 					<thead>
 						<tr>
 							<th data-field="callsign" data-halign="center" data-align="center" data-sortable="true">Callsign</th>
@@ -189,8 +194,8 @@ if it's not present, don't show loader */
 							<h2>NOTAMs for the London FIR and Major Airports Within the FIR</h2>
 						</div>
 					</div>
-					<table data-toggle="table" data-url="eud5.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="10, 25, 50, 100, All" data-height="400"
-					data-sort-name="starts" data-sort-order="asc" date-width="100%">
+					<table data-toggle="table" data-url="eud5.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="10, 25, 50, 100, All" data-height="400" data-sort-name="starts" data-sort-order="asc"
+					date-width="100%">
 						<thead>
 							<tr>
 								<th data-field="icao" data-halign="center" data-align="center" data-sortable="true">Airport ICAO</th>
@@ -205,8 +210,8 @@ if it's not present, don't show loader */
 								<h2>Upcoming European Events on VATSIM</h2>
 							</div>
 						</div>
-						<table data-toggle="table" data-url="eud3.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="10, 25, 50, 100, All" data-height="400"
-						data-sort-name="starts" data-sort-order="asc" date-width="100%">
+						<table data-toggle="table" data-url="eud3.php" data-cache="false" data-show-refresh="true" data-query-params="queryParams" data-pagination="true" data-search="true" data-page-list="10, 25, 50, 100, All" data-height="400" data-sort-name="starts" data-sort-order="asc"
+						date-width="100%">
 							<thead>
 								<tr>
 									<th data-field="title" data-halign="center" data-align="center" data-sortable="true">Event Name</th>
@@ -237,86 +242,87 @@ if it's not present, don't show loader */
 			</div>
 		</div>
 	</footer>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="js/bootstrap-table2.js"></script>
-
-	<!-- Custom Theme JavaScript -->
-	<script>
-		// Closes the sidebar menu
-		$("#menu-close").click(function(e) {
-			e.preventDefault();
-			$("#sidebar-wrapper").toggleClass("active");
-		});
-
-		// Opens the sidebar menu
-		$("#menu-toggle").click(function(e) {
-			e.preventDefault();
-			$("#sidebar-wrapper").toggleClass("active");
-		});
-
-		// Scrolls to the selected menu item on the page
-		$(function() {
-			$('a[href*=#]:not([href=#])').click(function() {
-				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					if (target.length) {
-						$('html,body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-				}
-			});
-		});
-	</script>
-	<script type="text/javascript">
-		function get_vatsim() {
-			$.ajax({
-				type: 'POST',
-				url: 'online.php',
-				data: {
-					request: 'true'
-				},
-				success: function(reply) {
-					$('.vatsim').html("" + reply + "");
-				}
-			});
-		}
-		$(document).ready(function() {
-			get_vatsim();
-		});
-	</script>
-	<script>
-		function displaypage() {
-			$(".se-pre-con").fadeOut("slow");
-		}
-		$(window).load(function() {
-			setTimeout(displaypage, 1800);
-		});
-	</script>
-
-	<script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
-	<script>
-		// enabling headroom
-		var myElement = document.querySelector(".paradeiser");
-		var headroom = new Headroom(myElement, {
-			tolerance: 5
-		});
-		headroom.init();
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(".vatsim").load('online.php');
-			setInterval(function() {
-				$(".vatsim").load('online.php')
-			}, 60000);
-		});
-	</script>
 </body>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap-table2.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script>
+	// Closes the sidebar menu
+	$("#menu-close").click(function(e) {
+		e.preventDefault();
+		$("#sidebar-wrapper").toggleClass("active");
+	});
+
+	// Opens the sidebar menu
+	$("#menu-toggle").click(function(e) {
+		e.preventDefault();
+		$("#sidebar-wrapper").toggleClass("active");
+	});
+
+	// Scrolls to the selected menu item on the page
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		});
+	});
+</script>
+<script type="text/javascript">
+	function get_vatsim() {
+		$.ajax({
+			type: 'POST',
+			url: 'online.php',
+			data: {
+				request: 'true'
+			},
+			success: function(reply) {
+				$('.vatsim').html("" + reply + "");
+			}
+		});
+	}
+	$(document).ready(function() {
+		get_vatsim();
+	});
+</script>
+<script>
+	function displaypage() {
+		$(".se-pre-con").fadeOut("slow");
+	}
+	$(window).load(function() {
+		setTimeout(displaypage, 1800);
+	});
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/headroom/0.7.0/headroom.min.js"></script>
+<script>
+	// enabling headroom
+	var myElement = document.querySelector(".paradeiser");
+	var headroom = new Headroom(myElement, {
+		tolerance: 5
+	});
+	headroom.init();
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".vatsim").load('online.php');
+		setInterval(function() {
+			$(".vatsim").load('online.php')
+		}, 60000);
+	});
+</script>
+<!-- Place this tag right after the last button or just before your close body tag. -->
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
 </html>
